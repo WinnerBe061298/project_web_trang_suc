@@ -1,0 +1,48 @@
+.top-footer {
+    text-align: center;
+    position: relative;
+    min-height:50px;
+}
+
+.top-footer .logo-tft a {
+    display: block;
+}
+
+.top-footer .hl-tft {
+    position: absolute;
+    left: 0;
+    top: calc((100% - 30px)/2);
+    height: 34px;
+    line-height: 34px;
+}
+
+.top-footer .htpp-tft {
+    position: absolute;
+    right: 0;
+    padding-left: 30px;
+    background: url(../images/ic-htppft.png) no-repeat;
+    height: 34px;
+    top: calc((100% - 34px)/2);
+    line-height: 34px;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .logo-tft {
+        display: none !important;
+    }
+    .contact-detail{
+    flex-direction: column;
+    
+    text-align: center;}
+    .for-me{
+    margin-top:20px;
+    }
+    .service{
+    
+    margin-top:20px;
+    }
+}

@@ -1,0 +1,168 @@
+@charset "UTF-8";
+
+:root{
+    --font : "Roboto";
+    --main-color: #da2032;
+    --border-color: #e0e0e0;
+    --violet-color: #6b278c;
+}
+
+body{
+	font-family:var(--font) !important;
+}
+
+.logo-t {
+    position: relative;
+
+}
+
+.fsearch {
+    position: absolute;
+    right: 0;
+    top: calc((100% - 36px)/2);
+    width: auto !important;
+    border-bottom: 1px solid red;
+}
+
+.fsearch input {
+    outline: none;
+    border: none;
+
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+.menu-account {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.acount:hover .menu-account {
+    display: block;
+}
+
+.main-menu>ul {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.main-menu>ul>li {
+    padding: 19px 0;
+}
+
+.main-menu a {
+    margin: 0 15px 0 0;
+    font-weight: 600;
+    color: var(--white);
+    text-decoration: none;
+    font-family: var(--font);
+    display: inline-block;
+    text-transform: uppercase;
+    font-size:13px;
+
+}
+
+
+
+.main-menu a:hover{
+    color:var(--main-color);
+}
+
+.main-menu ul .sub-menu {
+    position: absolute;
+    background-color: #fff;
+    padding: 0px 0px;
+    list-style: none;
+    width: 100%;
+   
+    display: none;
+    z-index: 99;
+    transition: 0.3s;
+   
+    left: 0;
+    box-shadow: 0 8px 12px #e0e0e0 inset;
+}
+
+.sub-content{
+   
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    
+}
+.sub-left{
+   
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 15px ;
+    
+    
+}
+.sub-left a:not(:nth-child(1)),.sub-left a:not(:nth-child(8)) {
+	margin-top: 10px;
+}
+.sub-menu .sub-left:nth-of-type(2) {
+        padding-top: 20px
+}
+
+
+.main-menu > li:nth-of-type(2) .sub-menu .sub-left > * {
+    float: left;
+    width: 50%;
+}
+
+
+
+
+
+.main-menu li:hover>ul.sub-menu {
+    display: block !important;
+
+}
+
+.main-menu li:hover>ul.sub-menu-tab2 {
+    display: block !important;
+
+}
+.active {
+	color : red;
+}
+
+.card {
+    position: relative;
+}
+.card-title{
+	min-height:48px;
+}
+
+.sale_of {
+    top: 5px;
+    left: 5px;
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+    line-height: 50px;
+    font-style: 14px;
+}
+
+@media only screen and (max-width: 700px) {
+    .fsearch{
+    position: relative !important;
+    width: 100% !important;;
+    }
+    .fsearch input{
+    width:90%;
+    }
+}

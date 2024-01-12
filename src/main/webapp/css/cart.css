@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+.inputNumCart {
+    outline: none;
+    max-width: 40px !important;
+}
+
+button {
+    outline: none !important;
+}

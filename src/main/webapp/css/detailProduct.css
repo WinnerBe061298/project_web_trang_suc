@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+.lst-detailit,
+.lst-supportdtit {
+    display: block;
+    overflow: hidden;
+    padding-bottom: 30px;
+    margin: 0 -25px 30px;
+    position: relative;
+}
+
+.supportdtit {
+    width: calc(50% - 50px);
+    float: left;
+    margin: 0 25px;
+}
+
+.tl-h3spdtit {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.tl-h3spdtit .img-tlh3spdt {
+    width: 48px;
+    height: 50px;
+    float: left;
+    line-height: 50px;
+}
+
+.tl-h3spdtit .txt-tlh3spdt {
+    width: calc(100% - 48px);
+    float: left;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}

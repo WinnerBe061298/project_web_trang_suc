@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+
+    
+
+.title-2 h2 {
+    
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 15px;
+    display: block;
+    color: red;
+    transition: 0.3s linear;
+}
+h5{
+	color:red;
+}
+.price {
+	margin-bottom:50px;
+}
+.price span{
+	float :right;
+	
+}
+
+/* .deltai-product:not(:first-child){
+	margin-top:50px;
+	
+} */
+.price:last-child{
+	border-top: 3px solid red;
+	padding-top:10px;
+}
+
+textarea{
+	width: 100%;
+    border: 1px solid #dbdbdb;
+    height: 85px;
+    padding-left: 12px;
+    padding-top: 5px;
+}
